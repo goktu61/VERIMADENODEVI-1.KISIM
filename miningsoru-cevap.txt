@@ -1,0 +1,13 @@
+Neden TotalCharges Text Olarak Algılandı?
+Orange CSVdeki tüm hücreleri tarayarak sütun tipi tahmini yapar.
+Eğer sütunda tam sayılar ve ondalık sayılar dışında bir değer varsa (ör "?") → Orange güvenli olması için tüm sütunu text/string olarak alır.
+Bu sayede hatalı veriler modelleme sırasında sorun çıkarmaz ama bizim durumumuzda sadece tek bir “?” bunu tetiklemiş oldu.
+
+Yani sütunda sayı gibi görünen veriler çoğunlukta olsa da tek bir "?" karakteri tüm sütunun text tipine geçmesine neden olmuş.
+
+Çözüm
+Preprocess → Impute widget ile "?" değerini mean ile doldur → sütun sayısal hale gelir.
+Artık TotalCharges modelleme için kullanılabilir.
+ 
+SORU:En çok hangi sözleşme tipindeki müşterilerin terk ettiğine dair 2 cümlelik teknik yorum.
+ cevap:Telco Customer Churn verisinde en yüksek ayrılma oranı aylık  sözleşmeye sahip müşterilerde görülmektedir Bu durum kısa vadeli taahhüt olmaması nedeniyle müşterilerin fiyat değişiklikleri ve hizmet memnuniyetsizliği karşısında daha kolay platformdan ayrıldığını göstermektedir.
