@@ -11,3 +11,18 @@ Artık TotalCharges modelleme için kullanılabilir.
  
 SORU:En çok hangi sözleşme tipindeki müşterilerin terk ettiğine dair 2 cümlelik teknik yorum.
  cevap:Telco Customer Churn verisinde en yüksek ayrılma oranı aylık  sözleşmeye sahip müşterilerde görülmektedir Bu durum kısa vadeli taahhüt olmaması nedeniyle müşterilerin fiyat değişiklikleri ve hizmet memnuniyetsizliği karşısında daha kolay platformdan ayrıldığını göstermektedir.
+Orange Data Mining üzerinde kullanılan araçların proje içindeki amaçları:
+
+File (Dataset) – Analizde kullanılacak Telco müşteri veri setini sisteme yüklemek için kullanılmıştır.
+Edit Domain – Veri setindeki değişkenlerin veri tiplerini ve özelliklerini kontrol ederek analiz için uygun hale getirmek amacıyla kullanılmıştır.
+Impute – Veri setinde bulunan eksik değerleri ortalama veya en sık görülen değer ile doldurarak veri kaybını önlemek için kullanılmıştır.
+Select Columns – Modelde kullanılacak değişkenleri belirlemek ve gereksiz sütunları (örneğin customerID) analiz dışı bırakmak için kullanılmıştır.
+Data Sampler – Veri setinden rastgele bir örnek seçerek model eğitim ve test süreçlerinde kullanılacak veri alt kümesini oluşturmak amacıyla kullanılmıştır.
+Distribution – Değişkenlerin veri setindeki dağılımını inceleyerek churn ile ilişkili olabilecek özellikleri görsel olarak analiz etmek için kullanılmıştır.
+Scatter Plot – Sayısal değişkenler arasındaki ilişkileri ve churn sınıfları arasındaki farklılıkları görsel olarak incelemek için kullanılmıştır.
+Logistic Regression – Müşterilerin hizmeti bırakıp bırakmayacağını tahmin etmek için kullanılan sınıflandırma modellerinden biridir.
+Random Forest – Birden fazla karar ağacını kullanarak churn tahmini yapan ve genellikle daha yüksek doğruluk sağlayan bir makine öğrenmesi algoritmasıdır.
+Tree (Decision Tree) – Veri setindeki karar kurallarını öğrenerek churn tahmini yapan ve aynı zamanda modelin nasıl karar verdiğini görsel olarak açıklayabilen bir algoritmadır.
+Test & Score – Kurulan makine öğrenmesi modellerinin performansını karşılaştırmak ve doğruluk oranlarını ölçmek için kullanılmıştır.
+Confusion Matrix – Modelin doğru ve yanlış tahminlerini detaylı şekilde göstererek sınıflandırma performansını analiz etmek için kullanılmıştır.
+Tree Viewer – Karar ağacı modelinin oluşturduğu kuralları görselleştirerek churn riski yüksek müşteri segmentlerini belirlemek için kullanılmıştır.
